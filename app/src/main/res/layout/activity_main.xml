@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/endpointEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter API Endpoint"
+            android:layout_margin="16dp"/>
+
+    <EditText
+            android:id="@+id/urlEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter URL"
+            android:layout_below="@id/endpointEditText"
+            android:layout_margin="16dp"/>
+
+    <EditText
+            android:id="@+id/bodyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter request body (optional)"
+            android:layout_below="@id/urlEditText"
+            android:layout_margin="16dp"/>
+
+    <EditText
+            android:id="@+id/contentTypeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Content Type"
+            android:layout_below="@id/bodyEditText"
+            android:layout_margin="16dp"/>
+
+    <EditText
+            android:id="@+id/portEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Port Number"
+            android:inputType="number"
+            android:layout_below="@id/contentTypeEditText"
+            android:layout_margin="16dp"/>
+
+    <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Request"
+            android:layout_below="@id/portEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
